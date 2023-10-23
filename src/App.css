@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,20 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+@media screen and (max-width: 780px) {
+  .nav-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .weatherinfo{
+    display: flex;
+    flex-direction: column;
   }
 }
