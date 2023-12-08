@@ -15,16 +15,12 @@ export const NavButtons = ({setQuery}) => {
             title: 'Tokyo'
         },
         {
-            id: 4,
-            title: 'Toronto'
-        },
-        {
             id: 5,
             title: 'Paris'
         }
     ]
   return (
-    <div className='flex items-center justify-between p-3 m-auto w-1/2'>
+    <div className='flex items-center justify-between p-3 m-auto w-1/3'>
         {cities.map((city) => (
             <button key = {city.id} 
                 className='text-lg font-medium text-slate-500'

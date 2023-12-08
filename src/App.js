@@ -1,12 +1,10 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import { Forecast } from './Components/Forecast';
 import { Inputs } from './Components/Inputs';
 import { NavButtons } from './Components/NavButtons';
 import { TemperatureDetails } from './Components/TemperatureDetails';
 import { TimeLocation } from './Components/TimeLocation';
 import getFormattedWeatherData from './WeatherService';
-import getWeatherData from './WeatherService';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

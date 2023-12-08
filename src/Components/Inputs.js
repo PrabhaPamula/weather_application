@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
 import {SlLocationPin} from 'react-icons/sl'
-import {WiDegrees} from 'react-icons/wi'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
