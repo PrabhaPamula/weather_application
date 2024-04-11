@@ -1,14 +1,63 @@
-@media screen and (max-width: 780px) {
-  .nav-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
 
-@media screen and (max-width: 550px) {
-  .weatherinfo{
+@media only screen and (max-width: 768px) {
+  .nav-header {
+    position: fixed; /* Fix sidebar on top */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full viewport height */
+    z-index: 10; /* Ensure sidebar overlaps content */
+  }
+
+  .nav-header.open {
+    transform: translateX(0); /* Slide sidebar in */
+  }
+
+  .nav-header.closed {
+    transform: translateX(-100%); /* Slide sidebar out */
+  }
+
+  .sidebar-content {
+    transition: margin-left 0.3s ease-in-out; /* Smooth content shift */
+  }
+
+  .nav-header.open .sidebar-content {
+    margin-left: 250px; /* Shift content to accommodate sidebar */
+  }
+  .extra-content{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+  }
+
+}
+@media (max-width: 600px) {
+  .more-weather-info{
     display: flex;
     flex-direction: column;
   }
+  .weather-card {
+    text-align: center;
+  }
+  
+}
+@media (max-width: 400px) {
+  .sidebar-side-container{
+    display: flex;
+    padding: 0 0 0 40px;
+  }
+  .nav-header{
+    padding-left: 2px;
+    padding-right: 0px;
+  }
+  .weather-card {
+    min-width: 177px;
+    max-width: 60%;
+    text-align: center;
+  }
+  .main-temp img{
+    display: none;
+  } 
+  .main-temp p{
+    font-size: 20px;
+  }
+
 }
